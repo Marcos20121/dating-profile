@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Made LLC </title>
+    <link rel="stylesheet" href="matchmade.css">
+</head>
+<body>
+    <h1> <p style="text-align: center;">Match Made Profile Creator</p><p style="text-align: center;">&#128151;</h1>
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="POST" enctype="multipart/form-data"></form>
+    <fieldset>
+        <legend>
+            Your Face
+        </legend>
+        <div>
+            <label for="avatar">Upload Your Image</label>
+        <input type="file" id="avatar" name="avatar", required />
+        <p>Image Preview: <img src="" id="preview", width="500">
+        </p><script src="https://url.nucamp.co/datingjs"></script>
+        </div>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Your Information</legend>
+        <label for="name">Name:</label>
+        <input type="text", id="name",name="name" placeholder="Enter your full name", required>
+        <div>
+            <label>Choose Gender</label>
+            <input type="radio" id="Female", name="gender", value="Female", required>
+            <label for="Female">Female</label>
+
+            <input type="radio" id="Male", name="gender", value="Male", required>
+            <label for="Male">Male</label>
+
+            <input type="radio" id="Other", name="gender", value="Other", required>
+            <input type="text" placeholder="Other Preferance">
+            <label for="Other">Other</label>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number", id="age",name="age">
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date", id="dob", name="dob">
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country", name="country"><option value="usa">U.S.A</option></select>
+            
+        </div>
+        <div>
+            <label for="salary">Salary:</label>
+            <span class="range-caption">Low Income</span>
+            <input type="range", id="salary", name="salary", min="0", max="100", value="50">
+            <span class="range-caption">Rich</span>
+        </div>
+        <div>
+            <label for="color">Favorite Color:</label>
+            <input type="color", id="color", name="color">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email", id="email", name="email", required placeholder="youremail@me.com">
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel", id="phone", name="phone", required placeholder="(123)-456-7890">
+        </div>
+        <div>
+            <label for="address">Current Address:</label>
+            <textarea cols="35", id="address", name="address", required></textarea>
+        </div>
+        <div>
+            <label for="contact method">Contact Method(s):</label>
+            <input type="checkbox", id="contact method", name="contact method", value="email">
+            <label for="emailcheckbox">Email</label>
+            <input type="checkbox", id="contact method", name="contact method", value="phone">
+            <label for="phonecheckbox">Phone</label>
+        </div>
+    </fieldset>
+    <div>
+        <input type="submit" p style="color: rgb(235, 72, 72);">
+        
+    </div>
+    
+</body>
+</html>
