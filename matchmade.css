@@ -1,0 +1,13 @@
+body{font-family: Verdana, Geneva, Tahoma, sans-serif;background-color: rgb(248, 184, 172);}
+
+p{margin: 2%;}
+
+legend{background: rgb(241, 142, 142); border-radius: 20px;color: seashell;padding: 12px;}
+
+fieldset{background-color: rgb(240, 59, 59);border: royalblue 10px;border-radius: 50px;margin-bottom: 10px;width: 800px;}
+
+div{margin: 10px;}
+
+label{display: inline-block;text-align: right;vertical-align: top;width: 60px;}
+
+.range-caption{background: darkcyan;color: whitesmoke;padding: 6px;text-align: center;}
